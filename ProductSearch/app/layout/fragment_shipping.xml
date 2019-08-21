@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Shipping">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ship_progressBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <ProgressBar
+                style="?android:attr/progressBarStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Searching ..."
+                android:gravity="center"/>
+        </LinearLayout>
+<LinearLayout
+    android:visibility="visible"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp"
+    android:id="@+id/ship_swish"
+    >
+
+    <LinearLayout
+        android:id="@+id/soldby_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/truck"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="@android:color/black"
+            android:text="\tSold By" />
+
+        <TableLayout
+            android:id="@+id/sold"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <TableRow
+            android:id="@+id/populars"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:visibility="gone"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textColor="@android:color/black"
+                android:text="\t\t\t\t\tPopularity\t\t\t\t" />
+
+            <com.wssholmes.stark.circular_score.CircularScoreView
+                android:id="@+id/scoreview"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                app:score="50"
+                app:setBackgroundColor="@android:color/white"
+                app:setTextColor="@android:color/black"
+                app:setPrimaryColor="@color/orange_spl"
+                app:setSecondaryColor="@color/orange_spl"
+               />
+        </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ship_info_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#c0c0c0"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ferry"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="@android:color/black"
+            android:text="\tShipping Info" />
+
+        <TableLayout
+            android:id="@+id/ship"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        </TableLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/return_policy_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#c0c0c0"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/dump_truck"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="@android:color/black"
+            android:text="\tReturn Policy" />
+
+        <TableLayout
+            android:id="@+id/returning"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+
+        </TableLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ship_norec"
+            android:layout_width="match_parent"
+            android:layout_height="550dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="No Results"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

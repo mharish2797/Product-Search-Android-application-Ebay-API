@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".wish">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/wish_display"
+        android:layout_width="match_parent"
+        android:layout_height="595dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/w_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="8dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/wish_norec"
+        android:layout_width="match_parent"
+        android:layout_height="595dp"
+        android:visibility="visible">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="No Wishes"
+            android:gravity="center"
+            android:textSize="20dp"
+            />
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/orange_spl"
+        android:gravity="center"
+        >
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/total_items"
+                android:layout_width="wrap_content"
+                android:text="WISHLIST TOTAL"
+                android:textColor="@android:color/white"
+                android:textSize="20dp"
+
+                />
+
+            <TextView
+                android:id="@+id/total_price"
+                android:layout_width="210dp"
+                android:text="WISHLIST TOTAL"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:gravity="right"
+                android:textSize="20dp"
+
+                />
+
+        </TableRow>
+    </TableLayout>
+
+    </LinearLayout>
+</ScrollView>

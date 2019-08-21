@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".search">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!-- TODO: Update blank fragment layout -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:letterSpacing="0.1"
+            android:text="Keyword"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/keyword"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_marginVertical="5dp"
+            android:layout_marginHorizontal="10dp"
+            android:hint="Enter Keyword"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/mand_keyword"
+            android:layout_width="wrap_content"
+            android:letterSpacing="0.1"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:text="Please enter mandatory field"
+            android:textColor="#B22222"
+            android:textStyle="bold"
+            android:textSize="12dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:letterSpacing="0.1"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="5dp"
+
+            android:text="Category"
+            android:textSize="15dp" />
+
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="5dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Condition"
+            android:letterSpacing="0.1"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="5dp"
+            android:textSize="15dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/c_new"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginVertical="5dp"
+                android:textSize="17dp"
+                android:letterSpacing="0.1"
+                android:text="New   " />
+
+            <CheckBox
+                android:id="@+id/c_used"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginVertical="5dp"
+                android:textSize="17dp"
+                android:layout_height="wrap_content"
+                android:letterSpacing="0.1"
+                android:text="Used   " />
+
+            <CheckBox
+                android:id="@+id/c_unspecified"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textSize="17dp"
+                android:layout_marginVertical="5dp"
+                android:letterSpacing="0.1"
+                android:text="Unspecified" />
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shipping Options"
+            android:letterSpacing="0.1"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="5dp"
+            android:textSize="15dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/c_local"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:letterSpacing="0.1"
+                android:layout_marginLeft="10dp"
+                android:textSize="17dp"
+                android:layout_marginVertical="5dp"
+                android:text="Local Pickup    " />
+
+            <CheckBox
+                android:id="@+id/c_ship"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:letterSpacing="0.1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginVertical="5dp"
+                android:textSize="17dp"
+                android:text="Free Shipping" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enable Nearby Search"
+                android:letterSpacing="0.1"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="5dp"
+                android:textSize="15dp" />
+
+            <CheckBox
+                android:id="@+id/enable_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="5dp"
+                android:text="" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/visible_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/editmiles"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="5dp"
+                android:ems="10"
+                android:hint="Miles from"
+                android:inputType="number" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="From"
+                android:letterSpacing="0.1"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="5dp"
+                android:textSize="15dp" />
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioGroup
+                    android:id="@+id/radiogroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/cur_loc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="17dp"
+                        android:layout_marginHorizontal="10dp"
+                        android:letterSpacing="0.1"
+                        android:text="Current Location" />
+
+                    <RadioButton
+                        android:id="@+id/zip_loc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:text="" />
+                </RadioGroup>
+
+
+                <AutoCompleteTextView
+                    android:id="@+id/zipcode"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/radiogroup"
+                    android:layout_marginLeft="-165dp"
+                    android:layout_marginBottom="0dp"
+                    android:layout_toRightOf="@id/radiogroup"
+                    android:ems="10"
+                    android:hint="zipcode"
+                    android:inputType="textPersonName" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/mand_zip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Please enter mandatory field"
+                android:letterSpacing="0.1"
+                android:textColor="#B22222"
+                android:layout_marginHorizontal="10dp"
+                android:textStyle="bold"
+                android:textSize="12dp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/search_btn"
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginVertical="5dp"
+                android:text="Search"
+                android:letterSpacing="0.1"
+                android:textColor="#fff"
+                android:background="@color/orange_spl"
+                />
+
+            <Button
+                android:id="@+id/clear_btn"
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginVertical="5dp"
+                android:letterSpacing="0.1"
+                android:textColor="#fff"
+                android:background="@color/orange_spl"
+                android:text="Clear" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>
